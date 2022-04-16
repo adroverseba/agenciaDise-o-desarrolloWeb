@@ -176,14 +176,14 @@ header #header__menu--itemGallery ul li {
   }
 
   header #header__menu--itemGallery:hover > ul {
-    display: flex;
+    display: block;
   }
 
   header #header__menu--itemGallery ul {
     display: none;
     position: absolute;
     left: -5px;
-    top: 40px;
+    top: 30px;
     padding: 0.5rem;
     height: 7rem;
     background-color: rgb(250, 250, 250);
@@ -622,5 +622,8 @@ footer ul li {
   .equipo-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .equipo-info__img img {
+    width: 80%;
   }
 }
