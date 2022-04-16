@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eebf7b6a6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="header__logo">
+      <a href="index.html"><img src="/assets/logo/logo terra-03.svg" alt="" width="200px"></a>
+    </div>
+    <!-- icono de menu -->
+    <label for="menu" class="header__burguerMenu">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox" id="menu">
+    <nav class="header__menu">
+      <label for="menu" class="header__closeMenu">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </label>
+      <ul>
+        <li><a href="../index.html#agency"> AGENCIA</a></li>
+        <li><a href="../index.html#services">SERVICIOS</a></li>
+        <li id="header__menu--itemGallery"><a href="../index.html#portfolio">TRABAJOS</a>
+          <ul>
+            <li><a href="">Diseño Grafico</a></li>
+            <li><a href="">Diseño Web</a></li>
+            <li><a href="">Fotografía y Video</a></li>
+          </ul>
+        </li>
+        <li><a href="./equipo.html">EQUIPO</a></li>
+        <li><a href="./contact.html">CONTACTO</a></li>
+      </ul>
+      <!-- <button id="button__postulation">
+          <div class="icono">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <span><a href="./page/postulate.html">POSTULATE</a> </span>
+        </button> -->
+    </nav>
+
+  </header>
+
+  <!-- main  comienzo -->
+  <main class="contact__mainContainer">
+
+    <h1 class="title__form">PONETE EN CONTACTO CON NUESTRO EQUIPO</h1>
+    <div class="contact__informationContainer">
+      <div class="contact__info--tel">
+        <i class="fa-solid fa-phone fa-2xl"></i><a href="tel:+549354156889">+549354156889</a>
+      </div>
+
+      <div class="contact__info--email">
+        <i class="fa-regular fa-envelope fa-2xl"></i><span></span><a
+          href="mailto:agenciadiseño@gmail.com">agenciadiseño@gmail.com</a>
+      </div>
+      <div class="contact__info--whatsapp"><i class="fa-brands fa-whatsapp fa-2xl"></i>
+        <a href="https://api.whatsapp.com/send?phone=0123456789"> Envíanos
+          un
+          mensaje de WhatsApp </a>
+      </div>
+    </div>
+
+    <form action="./ruta" class="contact__form">
+      <fieldset class="contact__form--FieldSet">
+        <legend>Completa Nuestro Formulario</legend>
+        <input type="text" name="userName" placeholder="NOMBRE" autocomplete="name" required>
+        <input type="tel" name="tel" placeholder="TELÉFONO" required>
+        <input type="email" name="email" placeholder="EMAIL">
+        <select name="consulta" id="">
+          <option value="" selected hidden>MOTIVO DE TU CONSULTA</option>
+          <option value="GD">DISEÑO GRAFICO</option>
+          <option value="wd">DISEÑO WEB</option>
+          <option value="FyV">FOTOGRAFIA Y VIDEO</option>
+          <option value="B">BRANDING</option>
+        </select>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="MENSAJE"></textarea>
+        <input id="contact__form--button" type="submit">
+      </fieldset>
+    </form>
+  </main>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1897.9296643171597!2d-122.09070529320684!3d37.41439842277897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba075cbc6005%3A0xb6bf4caf88989f86!2s1961%20Old%20Middlefield%20Way%2C%20Mountain%20View%2C%20CA%2094043%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1647709142228!5m2!1ses-419!2sar"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="contact__map"></iframe>
+
+  <footer>
+    <span>derechos reservados </span>
+    <ul>
+      <li><a href="https://www.behance.net/"><i class="fa-brands fa-behance-square"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+
+      <li><a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+      </li>
+
+    </ul>
+
+  </footer>
+</body>
+
+</html>

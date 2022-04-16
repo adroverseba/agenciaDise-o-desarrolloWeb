@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terra</title>
+  <!-- <link rel="shortcut icon" href="./multimedios/icon-graphic-design-8e71846112.png" type="image/x-icon"> -->
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eebf7b6a6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header__logo">
+      <a href="index.html"><img src="/assets/logo/logo terra-03.svg" alt="" width="200px"></a>
+    </div>
+
+
+    <!-- icono de menu hamburguesa -->
+    <label for="menu" class="header__burguerMenu">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <!-- checkbox conectado con el label de arriba que contiene el icono de burguer menu y con el 
+        icono de la cruz que esta en el label de abajo -->
+    <input type="checkbox" id="menu">
+
+    <!-- <nav class="header__menu"> -->
+    <!-- icono de la cruz -->
+    <nav class="header__menu">
+      <label for="menu" class="header__closeMenu">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </label>
+      <ul>
+        <li><a href="#agency"> AGENCIA</a></li>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li id="header__menu--itemGallery"><a href="#portfolio">TRABAJOS</a>
+          <ul>
+            <li><a href="">Diseño Grafico</a></li>
+            <li><a href="">Diseño Web</a></li>
+            <li><a href="">Fotografía y Video</a></li>
+          </ul>
+        </li>
+        <li><a href="./page/equipo.html">EQUIPO</a></li>
+        <li><a href="./page/contact.html">CONTACTO</a></li>
+      </ul>
+      <!-- <button id="button__postulation">
+        <div class="icono">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <span><a href="./page/postulate.html">POSTULATE</a> </span>
+      </button> -->
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="heroImage">
+      <div class="hero__text">
+        <h1>Dondes estés,<br>
+          eres parte
+        </h1>
+      </div>
+    </section>
+    <section class="agency section" id="agency">
+      <h2 class="agency__title">AGENCIA</h2>
+      <div class="agency__info">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo distinctio error suscipit modi
+          nesciunt nisi delectus voluptas assumenda porro. Optio ipsum facilis unde est nesciunt sint ex at! Quo autem
+          labore mollitia! Optio, expedita! Veritatis impedit, sequi minima officia architecto dolor vel velit numquam
+          quidem aut neque assumenda ipsam aspernatur fugiat iusto culpa voluptas ad doloribus modi. Aliquid optio eius
+          omnis quam iure, nisi dolore id quas, voluptatem natus sapiente. Sint deleniti culpa atque, dolorem incidunt
+          dignissimos tempora nihil? Commodi fugiat voluptatum assumenda. Dignissimos alias, eos odio voluptates
+          perferendis tempore at ducimus aperiam beatae minima, totam, eaque assumenda atque?</P>
+      </div>
+      <img src="./assets/svg/undraw_experience_design_eq-3-j.svg" alt="DISEÑO" class="agency__img">
+    </section>
+    <section class="services section" id="services">
+      <h2>SERVICIOS</h2>
+      <div class="caja__servicios " id="services__div1">
+        <img src="./assets/icons/amayuscula.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+      <div class="caja__servicios " id="services__div2">
+        <img src="./assets/icons/socialrelation.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+      <div class="caja__servicios" id="services__div3">
+        <img src="./assets/icons/camarafoto.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+      <div class="caja__servicios" id="services__div4">
+        <img src="./assets/icons/webservice.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+      <div class="caja__servicios" id="services__div5">
+        <img src="./assets/icons/programationicon.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+      <div class="caja__servicios" id="services__div6">
+        <img src="./assets/icons/uxwebdesign.png" alt="" width="60px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rerum neque asperiores maxime
+          perspiciatis magnam qui nesciunt nulla, ea debitis</p>
+      </div>
+
+    </section>
+    <section class="portfolio section" id="portfolio">
+      <h2 class="portfolio__title">NUESTROS TRABAJOS</h2>
+
+      <ul class="portfolio__category">
+        <li><a href="">Diseño Grafico</a> </li>
+        <li><a href="">Diseño Web</a> </li>
+        <li><a href="">Fotografía y Video</a> </li>
+      </ul>
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="./assets/TRABAJOS/dise;o web.png" alt="">
+        </a>
+
+      </figure>
+
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="./assets/TRABAJOS/BRANDINDG.png" alt="">
+        </a>
+
+      </figure>
+
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="./assets/TRABAJOS/marcas.png" alt="">
+        </a>
+
+      </figure>
+
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="./assets/TRABAJOS/packaging.png" alt="">
+        </a>
+      </figure>
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="./assets/TRABAJOS/redes.png" alt="">
+        </a>
+      </figure>
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="assets/TRABAJOS/UX-UI.png" alt="">
+        </a>
+      </figure>
+      <figure class="portfolio__figure">
+        <a href="">
+          <img src="assets/webdesign.jpg" alt="">
+        </a>
+      </figure>
+
+
+    </section>
+  </main>
+  <footer>
+    <span>derechos reservados </span>
+    <ul>
+      <li><a href="https://www.behance.net/"><i class="fa-brands fa-behance-square"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+
+      <li><a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+      </li>
+
+    </ul>
+
+  </footer>
+</body>
+
+</html>
