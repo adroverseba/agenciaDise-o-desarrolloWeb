@@ -218,6 +218,7 @@ main {
 }
 
 .hero__text h1 {
+  position: relative;
   font-size: 80px;
 }
 
@@ -227,6 +228,24 @@ section h2 {
 
 .hero header header section.services {
   background-color: var(--grey-soft);
+}
+
+@keyframes right-in {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text h1 {
+    animation-name: right-in;
+    animation-duration: 2s;
+  }
 }
 
 /* +++++++++++++++++++++++++++++++++ */
@@ -275,7 +294,7 @@ section h2 {
 /* servicios */
 .services {
   background-color: var(--grey-soft);
-  width: 100vw;
+  /* width: 95vw; */
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -321,6 +340,21 @@ section h2 {
   grid-area: info6;
 }
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .services {
     width: 100vw;
@@ -332,6 +366,12 @@ section h2 {
       "info1 info2"
       "info3 info4"
       "info5 info6";
+  }
+
+  .caja__servicios img:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: 2; */
   }
 }
 
@@ -407,6 +447,11 @@ section h2 {
       "img img img"
       "img img img";
   }
+
+  .portfolio__figure img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+  }
 }
 
 /* ++++++++++++++++++++++++++++ */
@@ -415,25 +460,27 @@ footer {
   position: relative;
   background-color: var(--celeste);
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer span {
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
   color: #551a98;
   font-size: 15px;
+  padding: 0px 15px;
 }
 footer ul {
   display: inline;
   margin: 0 80px;
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
 }
 footer ul li {
   display: inline;
   margin-left: 40px;
+}
+
+footer ul li i {
+  font-size: 2rem;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++ */
@@ -520,11 +567,25 @@ footer ul li {
 
 /* ++++++++++++++++++++++++++++++++++ */
 /* EQUIPO */
+.body-equipo {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 20%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
 .container-equipo {
   display: grid;
   grid-template-rows: 100px 10% 1fr;
   align-items: center;
   grid-template-rows: 100px;
+}
+
+.container-equipo h1 {
+  padding: 10px;
+  font-size: 3rem;
+  color: #474747;
 }
 
 .equipo-info {
