@@ -576,3 +576,8 @@ footer ul li i {
     width: 80%;
   }
 }
+
+/* GRAPHIC DESIGN */
+header {
+  z-index: 1;
+}
