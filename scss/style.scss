@@ -1,0 +1,105 @@
+// esta hoja pricipal de estilos con Sass afecta a la page *********  webDesign  *************. la misma podra ser visualizada cuando se corra la web ingresando a la opcion del navbar TRABAJOS>DISEñO WEB
+
+// variables
+$colorFont: #5a6978;
+$colorPrimary: #4eb2f2;
+
+.main-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+  .block {
+    width: 100%;
+    min-height: 200px;
+    margin: 1.5rem;
+
+    @media (min-width: 768px) {
+      width: 43%;
+      height: 17rem;
+    }
+    @media (min-width: 1024px) {
+      width: 21%;
+      height: 12rem;
+    }
+    h3 {
+      color: aliceblue;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+    p {
+      color: $colorFont;
+    }
+  }
+  .order1 {
+    order: 1;
+    h2 {
+      color: $colorFont;
+    }
+  }
+  .order2 {
+    background-image: url("http://ingenioagency.com/wp-content/uploads/2019/09/Solucion-I-Innovacion-Ingenio_The_Agency.jpg");
+    background-size: cover;
+    order: 2;
+  }
+  .order3 {
+    order: 3;
+  }
+  .order4 {
+    order: 4;
+    h3 {
+      color: $colorFont;
+      background-color: white;
+      font-size: xx-large;
+    }
+  }
+  .order5 {
+    background-image: url("https://ingenioagency.com/wp-content/uploads/2019/09/Solucion-BrandCo-Comunicacion-Ingenio_The_Agency.jpg");
+    background-size: cover;
+    order: 5;
+  }
+  .order6 {
+    background-image: url("https://img.freepik.com/vector-gratis/disenadores-estan-trabajando-diseno-pagina-web-diseno-web-interfaz-usuario-organizacion-contenido-experiencia-usuario_335657-4403.jpg?w=2000");
+    background-size: cover;
+    order: 6;
+  }
+  .order7 {
+    order: 7;
+  }
+  .order8 {
+    order: 8;
+  }
+  .order9 {
+    order: 9;
+  }
+  .order10 {
+    background-image: url("https://konclass.com/wp-content/uploads/2018/05/8-herramientas-diseno-web.jpg");
+    background-size: cover;
+    order: 9;
+  }
+  .order11 {
+    background-image: url("https://eikonos.com/wp-content/uploads/2016/01/dise%C3%B1o-web-responsive.jpg");
+    background-size: cover;
+    order: 11;
+  }
+  .order12 {
+    order: 12;
+  }
+  .order13 {
+    order: 13;
+  }
+  .order14 {
+    order: 14;
+  }
+  .space {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+}
+
+@import "footer";

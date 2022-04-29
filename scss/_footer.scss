@@ -1,0 +1,23 @@
+footer {
+  position: relative;
+  background-color: $colorPrimary;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    li {
+      display: flex;
+      i {
+        font-size: 2rem;
+        margin: 0 10px;
+      }
+    }
+  }
+  span {
+    color: #551a98;
+    font-size: 15px;
+    padding: 0px 15px;
+  }
+}

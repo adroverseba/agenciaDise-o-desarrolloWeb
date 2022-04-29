@@ -1,0 +1,94 @@
+.main-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px auto; }
+  @media (min-width: 768px) {
+    .main-container {
+      width: 80%; } }
+  .main-container .block {
+    width: 100%;
+    min-height: 200px;
+    margin: 1.5rem; }
+    @media (min-width: 768px) {
+      .main-container .block {
+        width: 43%;
+        height: 17rem; } }
+    @media (min-width: 1024px) {
+      .main-container .block {
+        width: 21%;
+        height: 12rem; } }
+    .main-container .block h3 {
+      color: aliceblue;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .main-container .block p {
+      color: #5a6978; }
+  .main-container .order1 {
+    order: 1; }
+    .main-container .order1 h2 {
+      color: #5a6978; }
+  .main-container .order2 {
+    background-image: url("http://ingenioagency.com/wp-content/uploads/2019/09/Solucion-I-Innovacion-Ingenio_The_Agency.jpg");
+    background-size: cover;
+    order: 2; }
+  .main-container .order3 {
+    order: 3; }
+  .main-container .order4 {
+    order: 4; }
+    .main-container .order4 h3 {
+      color: #5a6978;
+      background-color: white;
+      font-size: xx-large; }
+  .main-container .order5 {
+    background-image: url("https://ingenioagency.com/wp-content/uploads/2019/09/Solucion-BrandCo-Comunicacion-Ingenio_The_Agency.jpg");
+    background-size: cover;
+    order: 5; }
+  .main-container .order6 {
+    background-image: url("https://img.freepik.com/vector-gratis/disenadores-estan-trabajando-diseno-pagina-web-diseno-web-interfaz-usuario-organizacion-contenido-experiencia-usuario_335657-4403.jpg?w=2000");
+    background-size: cover;
+    order: 6; }
+  .main-container .order7 {
+    order: 7; }
+  .main-container .order8 {
+    order: 8; }
+  .main-container .order9 {
+    order: 9; }
+  .main-container .order10 {
+    background-image: url("https://konclass.com/wp-content/uploads/2018/05/8-herramientas-diseno-web.jpg");
+    background-size: cover;
+    order: 9; }
+  .main-container .order11 {
+    background-image: url("https://eikonos.com/wp-content/uploads/2016/01/dise%C3%B1o-web-responsive.jpg");
+    background-size: cover;
+    order: 11; }
+  .main-container .order12 {
+    order: 12; }
+  .main-container .order13 {
+    order: 13; }
+  .main-container .order14 {
+    order: 14; }
+  .main-container .space {
+    display: none; }
+    @media (min-width: 1024px) {
+      .main-container .space {
+        display: block; } }
+
+footer {
+  position: relative;
+  background-color: #4eb2f2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      display: flex; }
+      footer ul li i {
+        font-size: 2rem;
+        margin: 0 10px; }
+  footer span {
+    color: #551a98;
+    font-size: 15px;
+    padding: 0px 15px; }
