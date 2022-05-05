@@ -1,3 +1,27 @@
+.button-bassic, .button-section, .button-report, .button-submit {
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
+
+.button-section {
+  border: 6px solid black;
+  font-weight: 700; }
+  .button-section:hover {
+    background-color: black;
+    color: white; }
+
+.button-report {
+  background-color: red; }
+
+.button-submit {
+  background-color: green;
+  color: white; }
+
 .main-container {
   box-sizing: border-box;
   display: flex;
@@ -21,13 +45,16 @@
         height: 12rem; } }
     .main-container .block h3 {
       color: aliceblue;
-      background-color: rgba(0, 0, 0, 0.3); }
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 0.2em; }
     .main-container .block p {
-      color: #5a6978; }
+      color: #5a6978;
+      font-weight: 400; }
   .main-container .order1 {
     order: 1; }
     .main-container .order1 h2 {
-      color: #5a6978; }
+      color: #5a6978;
+      font-weight: 900; }
   .main-container .order2 {
     background-image: url("http://ingenioagency.com/wp-content/uploads/2019/09/Solucion-I-Innovacion-Ingenio_The_Agency.jpg");
     background-size: cover;
@@ -39,6 +66,7 @@
     .main-container .order4 h3 {
       color: #5a6978;
       background-color: white;
+      font-weight: 700;
       font-size: xx-large; }
   .main-container .order5 {
     background-image: url("https://ingenioagency.com/wp-content/uploads/2019/09/Solucion-BrandCo-Comunicacion-Ingenio_The_Agency.jpg");
@@ -55,9 +83,9 @@
   .main-container .order9 {
     order: 9; }
   .main-container .order10 {
-    background-image: url("https://konclass.com/wp-content/uploads/2018/05/8-herramientas-diseno-web.jpg");
+    background-image: url("http://blog.atomikod.com/wp-content/uploads/2020/12/reactjs-780x439.jpg");
     background-size: cover;
-    order: 9; }
+    order: 10; }
   .main-container .order11 {
     background-image: url("https://eikonos.com/wp-content/uploads/2016/01/dise%C3%B1o-web-responsive.jpg");
     background-size: cover;
@@ -73,6 +101,13 @@
     @media (min-width: 1024px) {
       .main-container .space {
         display: block; } }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px; }
 
 footer {
   position: relative;

@@ -1,0 +1,31 @@
+.button-bassic {
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-section {
+  @extend .button-bassic;
+  border: 6px solid black;
+  font-weight: map-get($font-weights, bold);
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.button-report {
+  @extend .button-bassic;
+  background-color: red;
+}
+
+.button-submit {
+  @extend .button-bassic;
+  background-color: green;
+  color: white;
+}

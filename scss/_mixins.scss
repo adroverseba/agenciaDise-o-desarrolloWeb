@@ -1,0 +1,8 @@
+// centrar elementos dentro del contenedor padre
+
+@mixin center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: space-around;
+}
