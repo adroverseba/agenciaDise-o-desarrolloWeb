@@ -198,6 +198,7 @@ section h2 {
     "info5"
     "info6";
 }
+
 .caja__servicios {
   width: 400px;
   height: 300px;
@@ -207,6 +208,11 @@ section h2 {
   text-align: center;
   align-items: center;
   justify-content: space-around;
+}
+
+.caja__servicios:hover {
+  border: 4px solid var(--violeta);
+  transition: border 0.3s ease-in;
 }
 
 #services__div1 {
@@ -455,6 +461,11 @@ footer ul li i {
 
 /* ++++++++++++++++++++++++++++++++++ */
 /* EQUIPO */
+
+p {
+  font-size: 18px;
+}
+
 .body-equipo {
   background: rgb(238, 174, 202);
   background: linear-gradient(

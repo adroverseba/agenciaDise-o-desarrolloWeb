@@ -7,6 +7,9 @@
   background-color: transparent;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif; }
+  .button-bassic a, .button-section a, .button-report a, .button-submit a {
+    text-decoration: none;
+    color: inherit; }
 
 .button-section {
   border: 6px solid black;
