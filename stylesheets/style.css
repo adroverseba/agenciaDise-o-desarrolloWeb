@@ -147,8 +147,6 @@ section h2 {
     "titulo"
     " img"
     "info";
-  /* align-content: center; */
-  /* justify-content: center; */
 }
 .agency__title {
   grid-area: titulo;
@@ -279,6 +277,52 @@ section h2 {
       "info4 info5 info6";
   }
 }
+
+/* +++++++++++++++++++++++++++++++ */
+/* CURTAIN EFFECT */
+
+.curtain {
+  background-image: linear-gradient(
+    to bottom,
+    var(--grey-black) 50%,
+    var(--celeste) 50%
+  );
+}
+
+.curtain::after {
+  content: "";
+  display: block;
+  min-height: 98vh;
+}
+.invert {
+  padding: 0 6rem;
+  /* posiciono el contenido sticky */
+  position: sticky;
+  top: 20px;
+
+  /* centrado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  mix-blend-mode: difference;
+  min-height: 98vh;
+}
+
+.invert p {
+  /* color: var(--grey-black); */
+  color: wheat;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.invert span {
+  font-size: 25px;
+  color: wheat;
+}
+
 /* +++++++++++++++++++++++++++ */
 /* nuestros trabajos  */
 .portfolio {
